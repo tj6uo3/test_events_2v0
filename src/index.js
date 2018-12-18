@@ -1,7 +1,16 @@
-document.getElementById("tlacitko").onclick = function() {
-  myFunction();
+document.getElementById("tlacitko1").onclick = function() {
+  alertovat("tak");
 };
-
-function myFunction() {
-  document.getElementById("tlacitko").value = "YOU CLICKED ME!";
+document.getElementById("tlacitko2").onclick = function() {
+  alertovat("jinak");
+};
+function alertovat(vyber) {
+  switch (vyber) {
+    case "tak":
+      alert("kliknul jsi tak");
+      break;
+    case "jinak":
+      alert("kliknul jsi jinak");
+      break;
+  }
 }
